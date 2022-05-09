@@ -11,3 +11,127 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+main{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: auto;
+}
+ul{
+  width:100%;
+  list-style: none;
+  padding: 0.25rem 0.25rem 0.25rem;
+  background-color:rgb(129, 224, 27);
+}
+
+.item{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding:0.5rem 0.5rem 0.5rem;
+  background-color: aquamarine;
+}
+.item:first-child{
+  margin:0;
+}
+.item input[type="checkbox"]
+{
+  text-align: center;
+  width:2.5rem;
+  min-width: 48px;
+  height: 2.5rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+.item input[type="checkbox"]:focus + label {
+  text-decoration: underline;
+}
+.item > label{
+  font-size: 2.2rem;
+  flex-grow:initial;
+}
+.item svg{
+  width:48px;
+  height: 36px;
+  font-size: 1rem;
+  color:brown;
+  cursor: pointer;
+}
+.item svg:hover, .item svg:focus{
+  color:darkblue;
+  outline: none;
+}
+
+.addForm {
+  width:100%;
+  display:flex;
+  justify-content: flex-start;
+  margin: 0.5rem 0 0;
+  padding: 0.5rem 0.25rem;
+  border-bottom: 1px solid #eee;
+}
+
+.addForm label{
+  position: absolute;
+  left:-99999px;
+
+}
+
+.addForm input[type='text']{
+  flex-grow: 1;
+  max-width: clac(100%-50px);
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  margin-right: 0.25rem;
+  outline: none;
+}
+
+button{
+  height: 48px;
+  min-width: 48px;
+  border-radius: 0.25rem;
+  padding:0.5rem;
+  font-size:1rem;
+  background-color: aliceblue;
+  color:blue;
+  cursor: pointer;
+}
+button:focus,
+button:hover{
+  color:brown;
+  background-color: lightseagreen;
+  outline: none;
+}
+
+
+.searchForm {
+  width:100%;
+  display:flex;
+  justify-content: flex-start;
+  margin: 0.5rem 0 0;
+  padding: 0.5rem 0.25rem;
+  border-bottom: 1px solid #eee;
+}
+
+.searchForm label{
+  position: absolute;
+  left:-99999px;
+
+}
+
+.searchForm input[type='text']{
+  flex-grow: 1;
+  max-width: clac(100%-50px);
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  margin-right: 0.25rem;
+  outline: none;
+}
